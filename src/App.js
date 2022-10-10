@@ -6,7 +6,6 @@ function App() {
   return (
     <div >
       <RouterProvider router={router}></RouterProvider>
-      <h1>Home page</h1>
     </div>
   );
 }
