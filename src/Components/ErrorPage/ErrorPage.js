@@ -3,7 +3,6 @@ import { Link, useRouteError } from 'react-router-dom';
 
 const ErrorPage = () => {
     const error = useRouteError();
-    console.log(error)
     return (
         <div className='bg-blue-100 flex justify-center items-center h-screen'>
             <div className='bg-gray-100 shadow-lg p-6 text-center rounded-md'>

@@ -9,8 +9,10 @@ import ErrorPage from "../Components/ErrorPage/ErrorPage";
 export const router = createBrowserRouter([
     {path:'/', element: <RootComponent></RootComponent>, errorElement:<ErrorPage></ErrorPage>,
      children: [
-        {path:'/', element: <Home></Home>},
-        {path:'home', element: <Home></Home>},
+        {path:'/', element: <Home></Home>,
+        loader:() => fetch('https://openapi.programming-hero.com/api/quiz') },
+        {path:'home', element: <Home></Home>,
+        loader:() => fetch('https://openapi.programming-hero.com/api/quiz')},
         {path:'topics', element: <Topics></Topics>},
         {path:'statistics', element: <Statistics></Statistics>},
         {path:'blog', element: <Blog></Blog>},
