@@ -15,7 +15,7 @@ const Home = () => {
                 <div className='mx-2 md:ml-4 pb-2'>
                     <h1 className='text-red-500 text-2xl md:text-3xl mb-4'>Hey, are you a web-developer?</h1>
                     <h3 className='font-semibold' >If your answer is yes.</h3>
-                    <p>Let's test your knowledge by participating quiz.</p>
+                    <small>Let's test your knowledge by participating quiz.</small>
                 </div>
             </div>
             <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:w-1/2 mx-2 md:mx-auto my-12'>
