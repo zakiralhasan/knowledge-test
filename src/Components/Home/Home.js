@@ -7,7 +7,8 @@ const Home = () => {
     const quizTopics = useLoaderData();
     const topics = quizTopics.data;
     return (
-        <div className=''>
+        <div>
+            {/*Home page header section  */}
             <div className='bg-gray-100 m-4 md:flex flex-none items-center rounded shadow-lg md:w-11/12 md:mx-auto mx-2'>
                 <div className=' p-2'>
                     <img className='md:w-60 rounded ' src={logo} alt="" />
@@ -18,6 +19,8 @@ const Home = () => {
                     <small>Let's test your knowledge by participating quiz.</small>
                 </div>
             </div>
+            
+            {/* home page topics section */}
             <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:w-1/2 mx-2 md:mx-auto my-12'>
                 {
                     topics.map(topic => <QuizTopics

@@ -7,6 +7,7 @@ import Blog from '../Components/Blog/Blog';
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import TopicsPage from "../Components/TopicsPage/TopicsPage";
 
+//Have used this component for creating react-route.
 export const router = createBrowserRouter([
     {path:'/', element: <RootComponent></RootComponent>, errorElement:<ErrorPage></ErrorPage>,
      children: [

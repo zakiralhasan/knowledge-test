@@ -9,6 +9,8 @@ const NaveBar = () => {
             <div className="navbar-start">
                 <Link to='/home' className="btn btn-ghost normal-case text-xl">Knowledge Test</Link>
             </div>
+            
+{/* used daisyUI naveBar with react-router's NavLink */}
             <div className="navbar-end">
                 <div className="dropdown dropdown-end">
                     <label tabIndex={0} className="md:hidden btn btn-ghost btn-circle">

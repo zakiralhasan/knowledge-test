@@ -10,9 +10,10 @@ const Topics = () => {
     const quiz = data.questions;
 
 
-    const [correctCount, setCorrectCount] = useState(0);
-    const [wrongCount, setWrongCount] = useState(0);
+    const [correctCount, setCorrectCount] = useState(0); // Have used this state for the storing correct answers.
+    const [wrongCount, setWrongCount] = useState(0); // Have used this state for the storing wrong answers.
 
+    // Have used this function for calculating and showing correct and wrong answers.
     const checkCorrectAnswer = (answer, rightAnswer) => {
         if(answer === rightAnswer){
             setCorrectCount(correctCount + 1);

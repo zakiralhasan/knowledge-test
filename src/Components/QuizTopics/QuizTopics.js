@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const QuizTopics = ({topic}) => {
     const {id, logo, name, total} = topic;
+    
     return (
         <div>
             <div className='border p-2 w-full shadow-md rounded '>
@@ -12,7 +13,7 @@ const QuizTopics = ({topic}) => {
                     <small className='text-xl'>Total quiz: {total}</small>
                 </div>
                 <Link to={`/topics/${id}`}>
-                    <button className='w-full bg-blue-400 text-white py-2 rounded'>go to quiz</button>
+                    <button className='w-full bg-blue-400 text-white py-2 rounded'>Start test</button>
                 </Link>
             </div>
         </div>
