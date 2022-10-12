@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import QuizPage from './QuizPage';
+import QuizPage from '../QuizPage/QuizPage';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 

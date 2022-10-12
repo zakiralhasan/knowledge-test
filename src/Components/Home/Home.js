@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import logo from '../../images/header-logo.jpg';
-import QuizTopics from './QuizTopics';
+import QuizTopics from '../QuizTopics/QuizTopics';
 
 const Home = () => {
     const quizTopics = useLoaderData();
