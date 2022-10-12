@@ -1,10 +1,10 @@
 import React from 'react';
 
 const QuizPage = ({singleQuiz, index, checkCorrectAnswer}) => {
-    const { question, options, correctAnswer} = singleQuiz;
+    const {question, options, correctAnswer} = singleQuiz;
 
     const quizOptions = options.map((option, index) =>
-     <button onClick={(e) => checkCorrectAnswer(e.target.innerText, correctAnswer) } className='bg-blue-200 hover:bg-blue-500 hover:text-white rounded border m-2 shadow p-2 text-center' key={index}>
+     <button onClick={(e) => checkCorrectAnswer(e.target.innerText, correctAnswer)} className='bg-blue-200 hover:bg-blue-500 hover:text-white rounded border m-2 shadow p-2 text-center' key={index}>
         {option}
      </button>);
     
