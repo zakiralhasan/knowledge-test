@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const QuizTopics = ({topic}) => {
     const {id, logo, name, total} = topic;
     return (
-        <div className=''>
+        <div>
             <div className='border p-2 w-full shadow-md rounded '>
                 <img className='bg-gray-200 md:w-fit w-full' src={logo} alt="" />
                 <div className='mb-3'>

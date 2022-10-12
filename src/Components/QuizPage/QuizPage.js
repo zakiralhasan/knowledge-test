@@ -6,6 +6,8 @@ import { toast } from 'react-toastify';
 const QuizPage = ({singleQuiz, index, checkCorrectAnswer}) => {
     const {question, options, correctAnswer} = singleQuiz;
 
+   const sliceQuestion = question.slice(3, -4);
+
     const seeRightAnswer = () => {
         toast.info(correctAnswer)
     }
@@ -19,7 +21,7 @@ const QuizPage = ({singleQuiz, index, checkCorrectAnswer}) => {
         <div> 
             <div className='bg-gray-100 border m-6'>
                 <div className='flex justify-between m-2'>
-                    <h1 className='font-semibold'>Quiz No. {index} {question}</h1>
+                    <h1 className='font-semibold'>Quiz No. {index}) {sliceQuestion}</h1>
                     <FontAwesomeIcon onClick={seeRightAnswer} className='cursor-pointer ' icon={faEye}></FontAwesomeIcon>
                 </div>
                 <div className='grid sm:grid-cols-2 gap-2'>
